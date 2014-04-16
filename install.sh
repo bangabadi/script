@@ -100,16 +100,13 @@ service webmin restart
 #user
 curl -o "https://raw.githubusercontent.com/orangbiasa/script/master/user-add.sh"
 chmod +x user-add.sh
-./user-add.sh ri ri
-./user-add.sh vito vito12345
-./user-add.sh anisa anisa12345
 ./user-add.sh fadilah fadilah12345
 ./user-add.sh yudi yudi12345
 ./user-add.sh jaya jaya12345
 ./user-add.sh wasiso wasiso12345
 ./user-add.sh nyoman nyoman12345
 ./user-add.sh tirta tirta12345
-./user-add.sh vincent vincent12345
+
 
 
 
