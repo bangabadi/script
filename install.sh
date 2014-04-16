@@ -80,11 +80,11 @@ chmod +x speedtest_cli.py
 
 #monitor limit user
 cd /usr/sbin/
-curl -o "https://raw.githubusercontent.com/orangbiasa/script/master/userlmt.sh"
-curl -o "https://raw.githubusercontent.com/orangbiasa/script/master/usermon.sh"
+curl -o userlmt.sh "https://raw.githubusercontent.com/orangbiasa/script/master/userlmt.sh"
+curl -o usermon.sh "https://raw.githubusercontent.com/orangbiasa/script/master/usermon.sh"
 chmod 755 usermon.sh
 chmod 755 userlmt.sh
-curl -o "https://raw.githubusercontent.com/orangbiasa/script/master/autokill.sh"
+curl -o autokill.sh "https://raw.githubusercontent.com/orangbiasa/script/master/autokill.sh"
 chmod +x autokill.sh
 screen -AmdS check /usr/sbin/autokill.sh
 sed -i '$ i\screen -AmdS check /usr/sbin/autokill.sh' /etc/rc.local
@@ -98,7 +98,7 @@ service fail2ban restart
 service webmin restart
 
 #user
-curl -o "https://raw.githubusercontent.com/orangbiasa/script/master/user-add.sh"
+curl -o user-add.sh "https://raw.githubusercontent.com/orangbiasa/script/master/user-add.sh"
 chmod +x user-add.sh
 ./user-add.sh fadilah fadilah12345
 ./user-add.sh yudi yudi12345
